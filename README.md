@@ -23,5 +23,34 @@ flask-keycloak-example
 ### Run Flask application 
 
 `python app.py`
+ 
+Application will run on the port 5000 http://localhost:5000/
 
-to stop application the "CTRL + C"
+
+To stop the aplication "CTRL + C"
+
+
+## Keycloak configuration
+
+
+
+
+### Back to the Flask application for Keycloak client konfigurations
+
+app.py
+
+```
+
+# Keycloak Configuration
+app.config["KEYCLOAK_URL"] = "https://YourDomain.com"  ### OR  http://localhost:8080 (if Keycloak runs localy)
+app.config["KEYCLOAK_REALM"] = "flask"
+app.config["KEYCLOAK_CLIENT_ID"] = "flask"
+app.config["KEYCLOAK_CLIENT_SECRET"] = "your-client-secret"
+app.config["KEYCLOAK_REDIRECT_URI"] = "http://localhost:5000/auth/callback"
+
+
+
+
+```
+
+

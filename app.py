@@ -15,9 +15,9 @@ app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY") or secrets.token_hex(24)
 
 # Keycloak Configuration
-app.config["KEYCLOAK_URL"] = ""
-app.config["KEYCLOAK_REALM"] = ""
-app.config["KEYCLOAK_CLIENT_ID"] = ""
+app.config["KEYCLOAK_URL"] = "https://yourdomain.com"  #  http://localhost:8080 (if Keycloak runs localy)
+app.config["KEYCLOAK_REALM"] = "flask"
+app.config["KEYCLOAK_CLIENT_ID"] = "flask"
 app.config["KEYCLOAK_CLIENT_SECRET"] = "your-client-secret"
 app.config["KEYCLOAK_REDIRECT_URI"] = "http://localhost:5000/auth/callback"
 
