@@ -1,0 +1,5 @@
+flask
+python-jose
+python-keycloak 
+flask-login
+authlib 
