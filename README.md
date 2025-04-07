@@ -8,9 +8,7 @@ A secure and scalable Flask application integrated with **Keycloak** for Multi-F
 ✅ **Keycloak Integration** – Secure user authentication via Keycloak realms & clients.  
 ✅ **Role-Based Access Control (RBAC)** – Protect routes based on user roles.  
 ✅ **Flask Session Management** – Handle authenticated sessions securely.  
-✅ **Example Protected Routes** – Demo pages for authenticated vs. guest users.  
-✅ **Example Protected Routes** – Demo pages for authenticated vs. guest users.  
-✅ **Example Protected Routes** – Demo pages for authenticated vs. guest users.  
+
 
 
 ## 📖 Use Cases  
