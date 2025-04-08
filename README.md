@@ -122,4 +122,34 @@ app.config["KEYCLOAK_REDIRECT_URI"] = "http://localhost:5000/auth/callback"
 ```
 
 
+</details>
+
+---
+
+### First login test
+
+
+In this section, we'll login with test user "flaskuser" which we created in Keycloak. 
+
+
 <details>
+
+<summary> For detailed steps, expand the section below: </summary>
+
+From Home/Index page http://localhost:5000 click to login:
+
+![](/src/Login1.png)
+
+
+![](/src/login2.png)
+
+
+![](/src/login3.png)
+
+All looking  good and working properly. We are on protected page "Profile" now.
+
+To exit from the this page, click "loguot" 
+
+![](/src/logout.png)
+
+</details>
