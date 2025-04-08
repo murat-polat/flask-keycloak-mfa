@@ -126,7 +126,7 @@ app.config["KEYCLOAK_REDIRECT_URI"] = "http://localhost:5000/auth/callback"
 
 ---
 
-### First login test
+## First login test
 
 
 In this section, we'll login with test user "flaskuser" which we created in Keycloak. 
@@ -151,5 +151,43 @@ All looking  good and working properly. We are on protected page "Profile" now.
 To exit from the this page, click "loguot" 
 
 ![](/src/logout.png)
+
+</details>
+
+
+## User registration and login with MFA-authenticator
+
+<details>
+
+<summary> For detailed steps, expand the section below: </summary>
+
+Login as "admin" to the Keycloak and gå to "flask" realm. Than "Realm settings" => Login => User registration and turn "On" 
+
+
+![](/src/ActivateUserRegister.png)
+
+"Authentication" => Required actions => Configure OTP => Set as default action "On"
+
+![](/src/ConfigureOTP_MFA.png)
+
+Open a new browser window, or "Inkognito" modus because you are already in as "admin" user in Keycloak. Than gå to the application page http://localhost:5000 click to login
+
+![](/src/Register1.png)
+
+Click to "Register"
+
+![](/src/Register2.png)
+
+Fill all required fields in as you wished, than click to "Register"
+
+![](/src/mfa1.png)
+
+Open Google or Microsoft authenticator app in your mobile phone, than scan the barcode. Fill "One-time code" from Authenticator and "Submit"
+
+![](/src/MFA2.png)
+
+Done :)
+
+![](/src/mfa3.png)
 
 </details>
