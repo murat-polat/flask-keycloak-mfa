@@ -17,7 +17,7 @@ app.secret_key = os.environ.get("SECRET_KEY") or secrets.token_hex(24)
 # Keycloak Configuration
 #######  Don't forget to change your Keycloak URL below   ########
 
-app.config["KEYCLOAK_URL"] = "https://yourdomain.com"  #  http://localhost:8080 (if Keycloak runs localy)
+app.config["KEYCLOAK_URL"] = "Your Keycloak server URL here "  #  http://localhost:8080 (if Keycloak runs localy)
 app.config["KEYCLOAK_REALM"] = "flask"
 app.config["KEYCLOAK_CLIENT_ID"] = "flask"
 app.config["KEYCLOAK_CLIENT_SECRET"] = "your-client-secret"
